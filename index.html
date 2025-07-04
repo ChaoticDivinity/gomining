@@ -60,12 +60,21 @@
       margin-top: 20px;
       display: inline-block;
       box-shadow: 0 0 16px rgba(162,89,255,0.4);
+      border: none;
+      cursor: pointer;
       transition: all 0.3s ease;
     }
 
     .cta-button:hover {
       transform: scale(1.05);
       box-shadow: 0 0 24px rgba(242,182,0,0.7);
+    }
+
+    small {
+      display: block;
+      margin-top: 10px;
+      font-size: 0.85em;
+      color: #888;
     }
   </style>
 </head>
@@ -78,17 +87,20 @@
       plus entry to our exclusive <strong>10TH Miner Contest</strong>!
     </p>
     <p>
-  No rigs. No stress. Just daily Bitcoin rewards, powered by real data centres.
-</p>
+      No rigs. No stress. Just daily Bitcoin rewards, powered by real data centres.
+    </p>
+    <p style="font-size: 0.95em; color: #bbbbd1; margin-top: -0.5em;">
+      FireFaucet won’t let us open GoMining directly from here.<br>
+      But you can still get your free miner 👇
+    </p>
 
-<p style="font-size: 0.95em; color: #bbbbd1; margin-top: -0.5em;">
-  Clicking below will open GoMining directly in your browser (not just a pop-up) so you can claim your free trial miner.
-</p>
+    <button class="cta-button" onclick="navigator.clipboard.writeText('https://gomining.com/?ref=CpfU1'); alert('✅ Link copied! Paste it in a new tab to claim your free trial miner.');">
+      Copy Referral Link
+    </button>
 
-<a class="cta-button" href="#" onclick="window.top.location.href='https://gomining.com/?ref=CpfU1'; return false;">
-  Get Started Free
-</a>
-    </a>
+    <small>
+      If nothing happens, just paste the link into a new tab manually.
+    </small>
   </div>
 </body>
 </html>
